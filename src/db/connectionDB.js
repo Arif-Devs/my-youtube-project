@@ -1,10 +1,6 @@
 import mongoose from "mongoose";
 import pkg from "colors";
 
-// let connectionUrl = process.env.DB_CONNECTION_URL;
-// connectionUrl = connectionUrl.replace("<username>", process.env.DB_USERNAME);
-// connectionUrl = connectionUrl.replace("<password>", process.env.DB_PASSWORD);
-
 const connectDB = async () => {
   try {
     const connectionInstance = await mongoose.connect(
